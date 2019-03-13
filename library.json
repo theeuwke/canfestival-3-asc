@@ -1,0 +1,57 @@
+{
+	"name": "canfestival",
+	"keywords":"can, canopen, canfestival",
+	"description":"CanFestival fork",
+	"homepage":"https://canfestival.org/",
+	"authors":
+	{
+		"name":"ljessen",
+		"email":"github@ljessen.dk",
+		"url":"https://github.com/ljessendk/CanFestival"
+	},
+	"repository":
+	{
+		"type":"git",
+		"url":"https://github.com/theeuwke/CanFestival"
+	},
+	"export": {
+		"include":
+		[
+			"src/*.c",
+			"drivers/cm3/*.c"
+		],
+		"exclude":
+		[
+			"debian",
+			"doc",
+			"examples",
+			"objdictgen",
+			"*.vcproj",
+			"*.sln"
+		]
+	},
+	"frameworks": "stm32cube",
+	"platforms": "ststm32",
+	"examples": [
+		"[Ee]xamples/*.c",
+		"[Ee]xamples/*.h",
+		"[Ee]xamples/*.od",
+		"[Ee]xamples/*.vxproj",
+		"[Ee]xamples/*.filters",
+		"[Ee]xamples/*.s"
+	],
+	"build": {
+		"flags": [
+			"-fPIC",
+			"-DSTM32F10X_MD",
+			"-Iinclude",
+			"-Iinclude/cm3",
+			"-Iinclude/default",
+			"-Idrivers/cm3"
+		],
+		"src_filter": [
+			"+<src/*.c>",
+			"+<drivers/cm3/*.c>"
+		]
+	}
+}
