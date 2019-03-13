@@ -27,17 +27,17 @@ PROG_CFLAGS = SUB_PROG_CFLAGS
 LIB_ROOT = ../../include/cm3/stlib
 
 INCLUDES = -I../../include \
-		   -I../../include/cm3 \
-           -I$(LIB_ROOT)/STM32F10x_StdPeriph_Driver/inc \
-           -I$(LIB_ROOT)/CMSIS/CM3/DeviceSupport/ST/STM32F10x/ \
-           -I$(LIB_ROOT)/CMSIS/CM3/CoreSupport/ \
-		   -I.
+	-I../../include/cm3 \
+	-I$(LIB_ROOT)/STM32F1xx_HAL_Driver/Inc \
+	-I$(LIB_ROOT)/CMSIS/Device/ST/STM32F1xx/Include \
+	-I$(LIB_ROOT)/CMSIS/Include \
+	-I.
 
-# For medium density F103           
-# DEFINES = -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+# For medium density F103
+DEFINES = -DSTM32F103x6 -DUSE_STDPERIPH_DRIVER
 
 # For Connectivity line F105, external clock with 8Mhz crystal
-DEFINES = -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000ul
+//DEFINES = -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DHSE_VALUE=8000000ul
 
 CFLAGS = $(PROG_CFLAGS) $(DEFINES)
 
