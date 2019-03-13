@@ -51,6 +51,7 @@
 		],
 		"src_filter": [
 			"+<src/*.c>",
+			"-<src/symbols.c>",
 			"+<drivers/cm3/*.c>"
 		]
 	}
