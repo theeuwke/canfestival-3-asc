@@ -49,7 +49,7 @@
 			"-Iinclude/default",
 			"-Idrivers/cm3"
 		],
-		"src_filter": [
+		"srcFilter": [
 			"+<src/*.c>",
 			"-<src/symbols.c>",
 			"+<drivers/cm3/*.c>"
