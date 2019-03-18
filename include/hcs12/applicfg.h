@@ -163,7 +163,7 @@ extern void initHCS12 (void);
 #define REAL32	float
 #define REAL64 double
 
-#include "can.h"
+#include "canmsg.h"
 
 
 /// Definition of MSG_ERR

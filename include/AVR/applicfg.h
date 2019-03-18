@@ -53,7 +53,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 // Reals
 #define REAL32	float
 #define REAL64 double
-#include "can.h"
+#include "canmsg.h"
 
 // MSG functions
 // not finished, the strings have to be placed to the flash and printed out 

@@ -77,7 +77,7 @@ extern void printSCI_nbr (char sci, unsigned long nbr, char lastCar);
 #define REAL32	float
 #define REAL64 double
 
-#include "can.h"
+#include "canmsg.h"
 
 
 /// Definition of MSG_ERR

@@ -27,7 +27,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include "config.h"
 
 // Canfestivals includes
-#include "can.h"
+#include "canmsg.h"
 
 // Number of receive MB
 #define NB_MB				8

@@ -30,7 +30,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #include "can_drv.h"
 
 // Canfestivals includes
-#include "can.h"
+#include "canmsg.h"
 
 // Number of receive MOb
 #define NB_RX_MOB                       13	// minimal 8
