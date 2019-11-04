@@ -13,7 +13,7 @@ for root, dirs, files in os.walk('canfestival-3-asc/src'):
 	for file in files:
 		if file.endswith('.c') or file.endswith('.h'):
 			if file.find("symbols.c") is -1:
-				print "copy: " + file
+				print("copy: " + file)
 				shutil.copy2(os.path.join(root, file), lib_path)
 #
 # skip this, these aren't compatible with Stm32CubeMX
@@ -26,15 +26,15 @@ for root, dirs, files in os.walk('canfestival-3-asc/src'):
 
 for file in os.listdir("canfestival-3-asc/include"):
 	if file.endswith('.h'):
-		print "copy: " + file
+		print("copy: " + file)
 		shutil.copy2(os.path.join("canfestival-3-asc/include", file), lib_path)
 
 for file in os.listdir("canfestival-3-asc/include/cm4"):
 	if file.endswith('.h'):
-		print "copy: " + file
+		print("copy: " + file)
 		shutil.copy2(os.path.join("canfestival-3-asc/include/cm4", file), lib_path)
 
 for file in os.listdir("canfestival-3-asc/include/default"):
 	if file.endswith('.h'):
-		print "copy: " + file
+		print("copy: " + file)
 		shutil.copy2(os.path.join("canfestival-3-asc/include/default", file), lib_path)
